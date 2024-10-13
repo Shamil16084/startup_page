@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Startup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Your Startup</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#mission">Mission</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h2>Welcome to Our Startup</h2>
+            <p>Innovating the future, today!</p>
+            <p> Our startup provides a cutting-edge solution for real-time traffic light adjustment using 
+                AI and machine learning to optimize traffic flow in cities. 
+                By analyzing live traffic data, our system dynamically adjusts signal timings to reduce congestion, improve commute times, and minimize emissions. This not only enhances road safety but also contributes to a more sustainable urban environment. Our goal is to make smart city infrastructure more efficient and responsive to real-world traffic conditions.</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Our startup is led by a passionate team of students from ADA University who are dedicated to revolutionizing urban traffic management through cutting-edge technology. We believe that innovative solutions can shape the future of smart cities, and we are committed to creating impactful change.</p>
+            <div class="team">
+                <div class="team-member">
+                    <h3>Shamil Abbasov</h3>
+                    <p>CEO and IT student at ADA University. Shamil brings leadership and technical expertise to drive the company’s vision of developing AI-driven traffic solutions.</p>
+                    <a href="https://www.linkedin.com/in/shamil-abbasov-142351246/" target="_blank">Linkedin Profile</a>
+                </div>
+                <div class="team-member">
+                    <h3>Nariman Mammadov</h3>
+                    <p>Computer Science student at ADA University. Nariman focuses on the backend development of the system, ensuring seamless integration of data and real-time traffic adjustments.</p>
+                </div>
+                <div class="team-member">
+                    <h3>Rufat Hajizade</h3>
+                    <p>IT student at ADA University. Rufat specializes in infrastructure and system architecture, ensuring that the platform is scalable and reliable for urban environments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- New Technical Description Section -->
+    <section id="technical">
+        <div class="container">
+            <h2>Technical Description</h2>
+            <p>Our core technology utilizes advanced algorithms, sensors, and real-time data processing to improve urban traffic systems. Basically, we implement cameras into traffic lights. Using that cameras and computer vision algoritms, we collect data, analyse it and give real-time adjustment to the traffic lights. Our data model use different weights for different types of cars and prioritization. Below are some key technical components of our solution:</p>
+            <div class="technical-cards">
+                <div class="tech-card">
+                    <h3>AI-Powered Traffic Light Management</h3>
+                    <p>Object Detection: using YOLOv8 model to detect the vehicles from cameras.
+                        Vehicle Classification: classifying detected cars into categories (cars, buses, emergency vehicles etc.) with fine-tuning the model with photos of vehicles in the particular city.</p>
+                </div>
+                <div class="tech-card">
+                    <h3>Real-Time Data Processing</h3>
+                    <p>Regression Models: applying XGBoost model to predict traffic timing based on vehicle counts, type of cars, traffic patterns (time of day, rush hours), and weather (applying OpenWeatherMap API for real-time weather)</p>
+                </div>
+                <div class="tech-card">
+                    <h3>Deployment</h3>
+                    <p>Low-Latency Processing: running models on NVIDIA Jetson which reduces the need for cloud processing and improves response time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       <!-- New Demo Emulator Section -->
+       <section id="demo">
+        <div class="container">
+            <h2>Demo Emulator</h2>
+            <p>Experience our traffic management solution in action through our demo emulator. Click the link below to see how our AI-powered system dynamically adjusts traffic light timings in real-time.</p>
+            <a href="https://shamil16084.github.io/traffic_system/" class="btn" target="_blank">View Demo Emulator</a>
+            <!-- Alternatively, you can embed the demo directly using an iframe -->
+            <!-- <iframe src="https://your-demo-link.com" width="100%" height="500px"></iframe> -->
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Smart Traffic Light Management</h3>
+                    <p>Deploy AI-driven systems that adjust traffic light timings in real-time to optimize vehicle flow and reduce congestion in urban areas.</p>
+                </div>
+                <div class="card">
+                    <h3>Eco-Traffic Solutions</h3>
+                    <p>Provide eco-friendly traffic management services that reduce vehicle idling times and lower carbon emissions, contributing to greener cities.</p>
+                </div>
+                <div class="card">
+                    <h3>Emergency Response Prioritization</h3>
+                    <p>Implement systems that give priority to emergency vehicles, such as ambulances and fire trucks, by adjusting traffic signals in real-time for faster response times.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mission">
+        <div class="container">
+            <h2>Our Mission</h2>
+            <div class="mission-items">
+                <div class="mission">
+                    <h3>1. Reduce Traffic Congestion</h3>
+                    <p>We aim to minimize traffic congestion by deploying AI-based systems that dynamically adjust traffic lights to optimize vehicle flow and reduce waiting times.</p>
+                </div>
+                <div class="mission">
+                    <h3>2. Promote Sustainable Urban Mobility</h3>
+                    <p>Our goal is to help cities implement eco-friendly traffic solutions that lower carbon emissions and create a greener, more sustainable environment for future generations.</p>
+                </div>
+                <div class="mission">
+                    <h3>3. Enhance Emergency Response Times</h3>
+                    <p>We strive to improve the efficiency of emergency vehicle prioritization, ensuring that ambulances, fire trucks, and other first responders reach their destinations faster through intelligent traffic signal management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us through the form below.</p>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Startup. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
